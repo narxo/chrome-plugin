@@ -1,0 +1,41 @@
+{
+  "name": "Job titles",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "",
+  "homepage_url": "http://www.google.com",
+  "background": {
+    "scripts": ["src/bg/bg.js"]
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "options_page": "src/options_custom/index.html",
+  "permissions": [
+	"file://*/*",
+    "https://*/*,http://*/*",
+	"storage"
+	
+  ],
+   "web_accessible_resources": [
+    "src/inject/script.js",
+	"css/main.css",
+	"fonts/*",
+	"img/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*","http://*/*","file://*/*"
+      ],
+      "js": [
+        "src/inject/inject.js",
+		"js/jquery/jquery.min.js",
+		"src/inject/script.js"
+      ]
+    }
+  ]
+}

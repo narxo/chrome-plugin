@@ -1,0 +1,51 @@
+{
+    "data":{
+      "jobs": [
+        {
+          "title":"Title 1",
+          "id": 1
+        },
+        {
+          "title":"Title 2",
+          "id": 2
+        },
+        {
+          "title":"Title 3",
+          "id": 3
+        }
+      ],
+      "companies":[
+        {
+          "name":"Company 1",
+          "id": 1
+        },
+        {
+          "name":"Company 2",
+          "id": 2
+        },
+        {
+          "name":"Company 3",
+          "id": 3
+        }
+      ],
+      "persons":[
+        {
+          "id": 1,
+          "names": ["Dieter", "Dieter P", "Dieter Proost"],
+          "jobs" : [
+            {
+              "jobid":1,
+              "companyid":1,
+              "paid": true
+            },
+            {
+              "jobid":3,
+              "companyid": 3,
+              "paid": false
+            }
+          ]
+         
+        }  
+      ]
+    }
+} 
